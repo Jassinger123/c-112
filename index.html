@@ -1,6 +1,7 @@
+ 
 <html>
   <head>
-    <title>Hand Gesture App</title>
+    <title>Emotion To Emoji</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,41 +12,64 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
-<center>
-    <h3 class="btn btn-warning heading"> HAND GESTURE APP  <br>
-        <span>&#128400;</span>
-        <span>&#128079;</span>
-<span>&#128077;</span>
-<span>&#128076;</span>
-<span>&#128075;</span>
-<span>&#128080;</span>
-<span>&#9996;</span>
-    </h3>
-    <br> <br>
-    <h2>TAKE A SELFIE OF A GESTURE TO KNOW ABOUT IS MEANING </h2>
-    <br> 
-    <h3>ON THE FOLLOWING GESTURES  THE MODEL IS TRAINED </h3>
-    <span>&#128076;</span>
-    <span>&#9996;</span>
-    <span>&#128077;</span>
-    <br> <br>
-    <label>PREDECTION</label>
-    <br>
+  <div class="container">
+  
+    <center>
+<h3 class="btn btn-warning heading"> EMOTION TO EMOJI APP 
+  <br> <span >&#128522;</span>
+  <span >&#128512;</span>
+  <span >&#128546;</span>
+  <span>&#128532;</span>
+<span>&#128545;</span>
+<span>&#128548;</span>
+</h3>
+      <br><br>
+
+      <p style="font-size: 22px; color: blue;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
 <div class="col-md-4 col-sm-12 col-xs-12">
-    <label>WEBCAM VIEW-</label>
-    <div id="camera"></div>
-    <br>
-    <button id="capture_img" class="btn btn-success" onclick="capture_img()">CAPTURE IMAGE</button>
+  <label>Webcam View</label>
+  <div id="camera"></div>
+  <br> <br> 
+  <button onclick="take_pic()" class="btn btn-warning">TAKE PICTURE</button>
 </div>
-<br>
-<div class="col-md-4 col-sm-12 col-xs-12">
-    <label>SNAPSHOT-</label>
-    <div id="snapshot"></div>
-    <br> <br>
-    <button id="snapshot" class="btn btn-primary" onclick="snapshot()">SNAPSHOT</button>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <label>Predection 1</label>
+  <p class="emotion_name" id="emotion_para"></p>
+  <p class="emotion_img" id="emotion_emoji"></p>
+  <label>Predection 2</label>
+  <p class="emotion_name" id="emotion_para2"></p>
+  <p class="emotion_img" id="emotion_emoji2"></p>
 </div>
-</center>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+
+        <br><br>
+
+      </div>
+<div class="col-md-4 col-s-12 col-xs-12">
+  <label>SNAPSHOT VIEW</label>
+  <div id="snapshot"></div>
+  <br> <br>
+  <button onclick="compare()" class="btn btn-warning">COMPARE</button>
+  <br>
+</div>
+    </center>
+
+  </div>
+
 <script src="main.js"></script>
-</body>
+
+  </body>
 </html>
+
+ 

@@ -1,28 +1,35 @@
-span{
-    font-size: 30px;
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
 }
 
-.heading{
-    font-size: 20px;
-}
-
-body{
-    background-color: maroon;
-}
-
-h2{
-    color:blue;
-}
-
-h3{
-    color: magenta;
-}
- 
 label{
-    color:blueviolet;
-    padding: 6px;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: pink;
+  font-size: 14px;
+  color: blueviolet;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: plum;
 }
-
